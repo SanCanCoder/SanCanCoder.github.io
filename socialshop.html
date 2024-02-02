@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Social Shop</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <!-- TEXT LEGEND:
+        1. CLICK HERE: Indicates the next page in the user flow. 
+        2. DETOUR HERE: Indicates the existent of a page that is optional for the user to visit. -->
+
+    <!-- Same as homepage but shared -->
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="top-bar">
+                <div class="top-bar-left">
+                    <ul class="menu">
+                        <li class="menu-text">The Social Shop</li>
+                        <li><input type="search" placeholder="Search" size="10"></li> &nbsp; &nbsp; &nbsp;
+                    </ul>
+                </div>
+                <div class="top-bar-right">
+                    <ul class="dropdown menu" data-dropdown-menu>
+                        <li>
+                            <a href="#">Men</a>
+                            <ul class="menu vertical">
+                                <li><a href="#">T-shirt</a></li>
+                                <li><a href="#">Trousers</a></li>
+                                <li><a href="#">Jeans</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Women</a>
+                            <ul class="menu vertical">
+                                <li><a href="#">Tops</a></li>
+                                <li><a href="#">Trousers</a></li>
+                                <li><a href="#">Jeans</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <div class="grid-container">
+        <div class="grid-x">
+            <div class="cell large-4 medium-4 small-2"></div>
+            <div class="cell small-8">
+                &nbsp;<b>5 Joined. Shopping Together</b> &nbsp; <!-- Displaying number of people shopping together -->
+            </div>
+            <div class="cell large-4 medium-4
+             small-2"></div>
+        </div>
+    </div>
+    <br>
+    <main>
+        <!-- New Arrivals -->
+        <section class="grid-container fluid">
+            <h1>New Arrivals</h1>
+            <section class="grid-x">
+                <div class="cell large-4 medium-4 small-4"><img src="images/product1.jpg" alt="1" width="300"
+                        height="400" /></div>
+                <div class="cell large-4 medium-4 small-4"><img src="images/product2.jpg" alt="2" width="300"
+                        height="400" /></div>
+                <div class="cell large-4 medium-4 small-4"><img src="images/product3.jpg" alt="3" width="300"
+                        height="400" /></div>
+            </section>
+        </section>
+
+        <br>
+
+        <!-- Sale -->
+        <section class="grid-container fluid">
+            <h1>On Sale</h1>
+            <section class="grid-x">
+                <!-- DETOUR HERE. MORE DETAILS ABOUT THE PRODUCT-->
+                <div class="cell large-4 medium-4 small-4"><a href="viewProduct.html"><img src="images/product4.jpg" alt="4" width="300"
+                        height="400" /></a></div>
+                <div class="cell large-4 medium-4 small-4"><img src="images/product9.jpg" alt="5" width="300"
+                        height="400" /></div>
+                <div id="stickyElem" class="cell large-4 medium-4 small-4"><img src="images/product6.jpg" alt="6"
+                        width="300" height="400" /></div>
+            </section>
+        </section>
+
+        <br> <br>
+
+        <!-- Promotion Banner -->
+        <section id="promo" class="grid-container full">
+            <section class="grid-x">
+                <div class="Cell"><img src="images/promo.jpg" alt="promo" /></div>
+            </section>
+            <button type="button" class="button">Shop Now</button>
+        </section>
+    </main>
+
+
+    <!-- Footer ( Junk Drawer )-->
+    <footer>
+        <section class-="grid-container fluid">
+            <section class="grid-x">
+                <div class="cell large-4 medium-3 small-2">
+                </div>
+                <div class="cell large-4 medium-3 small-3">
+                    <br><br>
+                    <b>
+                        Blogs
+                        Career
+                        About Us
+                        Contact Us
+                    </b>
+                </div> &nbsp;
+                <div class="cell large-4 medium-6 small-5">
+                    <h1>Location:</h1>
+                    <img src="images/map.PNG" alt="maps" height="500" width="500" />
+                </div>
+                <div class="cell large-4 medium-3 small-2">
+                </div>
+            </section>
+        </section>
+    </footer>
+
+    <br>
+
+    <!-- Chat and Cart -->
+    <section class="grid-container fluid">
+        <section class="grid-x">
+            <div class="cell small-2"></div>
+            <div class="cell small-8">
+                <ul class="tabs" data-tabs id="example-tabs">
+                    <li class="tabs-title is-active">
+                        <a href="#panel1" aria-selected="true">Chat</a>
+                    </li>
+                    <li class="tabs-title">
+                        <a href="#panel2">Group Cart</a>
+                    </li>
+                </ul>
+                <div class="tabs-content" data-tabs-content="example-tabs">
+                    <div class="tabs-panel is-active" id="panel1">
+                        <p> <br> <br> <br> <br> <br> <br> </p>
+                        <!-- Adding <p> tag as the space will have shared texts -->
+                        <input type="text" id="typebox" placeholder="Text your friends">
+                        <input type="submit" value="Submit">
+                    </div>
+                    <div class="tabs-panel" id="panel2">
+                        <img src="images/product4.jpg" alt="4" width="100" height="100" /> &nbsp; &nbsp;
+                        <div class="cell small-4">
+                            <p><b>Lorem Ipsum</b></p>
+                            <span>-</span>
+                            <span>1</span>
+                            <span>+</span> <br>
+                            <a href="groupcart.html">
+                                <input type="button" value="View Group Cart"> <!-- CLICK HERE -->
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="small-2"></div>
+        </section>
+    </section>
+
+    <!-- Reverting to homepage while exiting the social shop -->
+    <section class="grid-container full">
+        <div class="grid-x">
+            <div class="cell large-4 medium-4 small-3"></div>
+            <div class="cell large-4 medium-4 small-6">
+                <a href="index.html"><button type="button">Exit Social Shop</button></a>
+            </div>
+            <div class="cell large-4 medium-4 small-3"></div>
+        </div>
+    </section>
+    
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

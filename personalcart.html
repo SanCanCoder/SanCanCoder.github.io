@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal cart</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <!-- TEXT LEGEND:
+        1. CLICK HERE: Indicates the next page in the user flow. 
+        2. DETOUR HERE: Indicates the existent of a page that is optional for the user to visit. -->
+
+    <section class="grid-container fluid">
+        <header>
+            <a href="index.html"><img src="images/logo.png" alt="Company Logo" width="100" height="100"></a>
+            <!-- Adding homepage link to the logo -->
+            <h1>The Social Shop</h1>
+        </header>
+
+        <main>
+            <h2>Personal Cart</h2>
+
+            <!-- Use a single table for all products -->
+            <table>
+                <tr>
+                    <!-- Product 1 -->
+                    <td valign="top">
+                        <img src="Images/product2.jpg" alt="Product Image" width="300" height="450">
+                        <h3>White tee</h3>
+                        <label for="product1-qty">Qty:</label>
+                        <input type="number" id="product1-qty" name="product1-qty">
+                        <br><br> <!-- Breaks for padding -->
+                    </td>
+                </tr>
+
+                <tr>
+                    <!-- Product 2 -->
+                    <td valign="top">
+                        <img src="Images/product3.jpg" alt="Product Image" width="300" height="450">
+                        <h3>White shirt</h3>
+                        <label for="product1-qty">Qty:</label>
+                        <input type="number" id="product1-qty" name="product1-qty">
+                        <br><br> <!-- Breaks for padding -->
+                    </td>
+                </tr>
+
+            </table>
+
+            <br>
+            <br>
+            <!-- CLICK HERE -->
+            <a href="payment.html"><button type="button">Proceed to checkout</button></a>
+            <br>
+            <br>
+
+            <h3>Similar products</h3>
+            <section class="grid-x">
+                <div class="cell large-4 medium-4 small-4"><img src="images/product1.jpg" alt="1" width="300"
+                        height="450" /></div>
+                <div class="cell large-4 medium-4 small-4"><img src="images/product2.jpg" alt="2" width="300"
+                        height="450" /></div>
+                <div class="cell large-4 medium-4 small-4"><img src="images/product3.jpg" alt="3" width="300"
+                        height="450" /></div>
+            </section>
+    </section>
+
+    </section>
+
+    <!-- Footer ( Junk Drawer )-->
+    <footer>
+        <section class-="grid-container fluid">
+            <section class="grid-x">
+                <div class="cell large-4 medium-3 small-2">
+                </div>
+                <div class="cell large-4 medium-3 small-3">
+                    <br><br>
+                    <b>
+                        Blogs
+                        Career
+                        About Us
+                        Contact Us
+                    </b>
+                </div> &nbsp;
+                <div class="cell large-4 medium-6 small-5">
+                    <h1>Location:</h1>
+                    <img src="images/map.PNG" alt="maps" height="500" width="500" />
+                </div>
+                <div class="cell large-4 medium-3 small-2">
+                </div>
+            </section>
+        </section>
+    </footer>
+
+    </main>
+
+</body>
+
+</html>
