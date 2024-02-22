@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal cart</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- TEXT LEGEND:
+        1. CLICK HERE: Indicates the next page in the user flow. 
+        2. DETOUR HERE: Indicates the existent of a page that is optional for the user to visit. -->
+
+    <header>
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <ul class="menu">
+                    <li class="menu-text"><a href="index.html"><img id="logoId" src="images/logo.png" alt="Logo"
+                                width="40" height="20" /></a></li>
+                </ul>
+            </div>
+            <div class="top-bar-right">
+                <ul id="dropList" class="dropdown menu" data-dropdown-menu>
+                    <li>
+                        <a href="#"><img class="user" src="images/user.png" alt="pcart" width="30" height="30" /></a>
+                        <ul class="menu vertical">
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Sign Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+    </header>
+
+    <main>
+        <div class="welcome">
+            <h1>Hey, Sanket!</h1>
+            <p>Finish Buying your Products Here</p>
+        </div>
+
+        <div>
+            <!-- Product 1 -->
+            <div class="product1">
+                <img src="Images/product2.jpg" alt="Product Image" width="300" height="450">
+                <h3>White tee</h3>
+                <label for="product1-qty">Qty:</label>
+                <input type="number" id="product1-qty" name="product1-qty" max="10" min="0">
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product2">
+                <img src="Images/product3.jpg" alt="Product Image" width="300" height="450">
+                <h3>White shirt</h3>
+                <label for="product2-qty">Qty:</label>
+                <input type="number" id="product2-qty" name="product1-qty" max="10" min="0">
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product3">
+                <img src="Images/product4.jpg" alt="Product Image" width="300" height="450">
+                <h3>Red Jacket</h3>
+                <label for="product3-qty">Qty:</label>
+                <input type="number" id="product3-qty" name="product1-qty" max="10" min="0">
+
+            </div>
+        </div>
+
+        <!-- CLICK HERE to Proceed to the payment page-->
+        <a href="payment.html"><button type="button" class="button">Proceed to Checkout</button></a>
+
+        <section id="check1" class="grid-container fluid">
+            <h3>Similar Products</h3>
+            <div class="grid-x">
+                <div class="cell large-4 medium-4 small-4"><img src="images/product1.jpg" alt="1" width="300"
+                        height="400" /></div>
+                <div class="cell large-4 medium-4 small-4"><img src="images/product2.jpg" alt="2" width="300"
+                        height="400" /></div>
+                <div class="cell large-4 medium-4 small-4"><img src="images/product3.jpg" alt="3" width="300"
+                        height="400" /></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer ( Junk Drawer )-->
+    <footer>
+        <section id="footID" class-="grid-container fluid">
+            <section class="grid-x">
+                <div class="cell large-4 medium-3 small-2">
+                </div>
+                <div class="cell large-4 medium-3 small-3">
+                    <ul>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="cell large-4 medium-6 small-5">
+                    <h1>Location:</h1>
+                    <p><b>101 Westmont Ave, Kitchener</b></p>
+                    <img class="map" src="images/map.PNG" alt="maps" height="500" width="500" />
+                </div>
+                <div class="cell large-4 medium-3 small-2">
+                </div>
+            </section>
+        </section>
+    </footer>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

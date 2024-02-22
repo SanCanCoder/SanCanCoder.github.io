@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <ul class="menu">
+                    <li class="menu-text"><a href="index.html"><img id="logoId" src="images/logo.png" alt="Logo"
+                                width="40" height="20" /></a></li> <!--Click to return -->
+                    <li><input type="search" placeholder="Search" size="10"></li>
+                </ul>
+            </div>
+            <nav id="navId">
+                <div class="top-bar-right">
+                    <ul id="dropList" class="dropdown menu" data-dropdown-menu>
+                        <li>
+                            <a href="groupcart.html"><img class="cart" src="images/cart.png" alt="pcart" width="30"
+                                    height="30" /></a> 
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <style>
+            body {
+                font-family: 'Poppins', sans-serif;
+                background-color: lavender;
+            }
+
+            #prodImg {
+                display: block;
+                margin: 0 auto;
+                margin-top: 15px;
+            }
+
+            #desc {
+                font-weight: bold;
+                margin-top: 15px;
+                text-align: center;
+                margin-left: 10px;
+
+            }
+
+            .product-reviews {
+                
+                margin-left: 10px;
+
+            }
+
+            #size-selection,
+            #color-selection {
+
+                width: 80%;
+                text-align: left;
+                margin-left: 10px;
+            }
+
+            select {
+                border-radius: 10px;
+            }
+
+            hr {
+                height: 5px;
+                width: 60%;
+            }
+        </style>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Product Image -->
+        <img id="prodImg" src="images/product4.jpg" alt="Product Image" width="300" height="450">
+
+        <hr>
+
+        <div id="desc">
+            <!-- Product Title -->
+            <h1>T shirt</h1>
+
+            <!-- Product Description -->
+            <p>Pre washed for a casual style. Perfect for relaxing at home or wearing out and about.</p>
+        </div>
+
+        <!-- Product Reviews Section -->
+        <section class="product-reviews">
+            <hr>
+            <h2>Reviews</h2>
+            <div class="review">
+                <p>★★★★★</p>
+                <p>Great pants!</p>
+            </div>
+            <div class="review">
+                <p>★★★★★</p>
+                <p>Comfortable and stylish.</p>
+            </div>
+            <div class="review">
+                <p>★★★★★</p>
+                <p>Love these pants!</p>
+            </div>
+            <hr>
+        </section>
+
+
+        <!-- Size Selection Form -->
+        <section id="size-selection">
+            <form>
+                <label for="size-selection">Choose a Size:</label>
+                <select name="size-selection">
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                    <option value="Extra Large">Extra Large</option>
+                </select>
+            </form>
+        </section>
+
+        <!-- Color Selection Section -->
+        <section id="color-selection">
+            <label for="color-selection">Choose a Color</label>
+            <select name="color-selection">
+                <option value="White">White</option>
+                <option value="Black">Black</option>
+                <option value="Grey">Grey</option>
+                <option value="Brown">Brown</option>
+            </select>
+        </section>
+
+        <!-- Submit Button Section -->
+        <section>
+            <button type="button" class="button">Add to Cart</button>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- Footer Section -->
+    <footer>
+        <section id="footID" class-="grid-container fluid">
+            <section class="grid-x">
+                <div class="cell large-4 medium-3 small-2">
+                </div>
+                <div class="cell large-4 medium-3 small-3">
+                    <ul>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="cell large-4 medium-6 small-5">
+                    <h1>Location:</h1>
+                    <p><b>101 Westmont Ave, Kitchener</b></p>
+                    <img class="map" src="images/map.PNG" alt="maps" height="500" width="500" />
+                </div>
+                <div class="cell large-4 medium-3 small-2">
+                </div>
+            </section>
+        </section>
+    </footer>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
